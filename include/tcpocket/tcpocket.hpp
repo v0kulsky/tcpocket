@@ -1,5 +1,6 @@
 #pragma once
 
+#include "tcpocket/error.hpp"
 #include <string>
 
 namespace tcpocket {
