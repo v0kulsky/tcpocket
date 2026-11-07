@@ -16,7 +16,6 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "Clang"
 endif()
 
 add_library(tcpocket
-    src/tcpocket.cpp
     src/error.cpp
     src/socket_handle.cpp
 )
