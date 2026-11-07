@@ -93,6 +93,7 @@ std::error_code error_code_from_errno(int err) noexcept {
 #if defined(ENOTSUP) && (ENOTSUP != EOPNOTSUPP)
         case ENOTSUP:
 #endif
+        case EAFNOSUPPORT:
             return SocketError::OperationNotSupported;
         default:
             return SocketError::Unknown;

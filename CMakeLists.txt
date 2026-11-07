@@ -18,6 +18,7 @@ endif()
 add_library(tcpocket
     src/tcpocket.cpp
     src/error.cpp
+    src/socket_handle.cpp
 )
 
 target_include_directories(tcpocket
@@ -55,6 +56,7 @@ if(BUILD_TESTS)
     add_executable(unit_tests
         tests/test_tcpocket.cpp
         tests/test_error.cpp
+	tests/test_socket_handle.cpp
     )
 
     target_link_libraries(unit_tests
