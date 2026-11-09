@@ -18,6 +18,7 @@ endif()
 add_library(tcpocket
     src/error.cpp
     src/socket_handle.cpp
+    src/socket_options.cpp
 )
 
 target_include_directories(tcpocket
@@ -56,6 +57,7 @@ if(BUILD_TESTS)
         tests/test_tcpocket.cpp
         tests/test_error.cpp
 	tests/test_socket_handle.cpp
+	tests/test_socket_options.cpp
     )
 
     target_link_libraries(unit_tests
