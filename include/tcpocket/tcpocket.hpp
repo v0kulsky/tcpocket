@@ -6,3 +6,4 @@
 #include "tcpocket/socket_options.hpp"
 #include "tcpocket/ip_address.hpp"
 #include "tcpocket/endpoint.hpp"
+#include "tcpocket/dns_resolver.hpp"

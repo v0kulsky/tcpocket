@@ -21,6 +21,7 @@ add_library(tcpocket
     src/socket_options.cpp
     src/ip_address.cpp
     src/endpoint.cpp
+    src/dns_resolver.cpp
 )
 
 target_include_directories(tcpocket
@@ -62,6 +63,7 @@ if(BUILD_TESTS)
 	tests/test_socket_options.cpp
 	tests/test_ip_address.cpp
 	tests/test_endpoint.cpp
+	tests/test_dns_resolver.cpp
     )
 
     target_link_libraries(unit_tests
