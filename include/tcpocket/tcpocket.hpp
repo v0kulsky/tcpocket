@@ -7,3 +7,4 @@
 #include "tcpocket/ip_address.hpp"
 #include "tcpocket/endpoint.hpp"
 #include "tcpocket/dns_resolver.hpp"
+#include "tcpocket/tcp_stream.hpp"
