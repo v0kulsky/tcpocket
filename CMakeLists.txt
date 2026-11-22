@@ -41,6 +41,19 @@ target_link_libraries(tcpocket_app
         tcpocket
 )
 
+option(BUILD_EXAMPLES "Build sample applications" ON)
+
+if(BUILD_EXAMPLES)
+    add_executable(echo_server examples/echo_server.cpp)
+    target_link_libraries(echo_server PRIVATE tcpocket)
+
+    add_executable(echo_client examples/echo_client.cpp)
+    target_link_libraries(echo_client PRIVATE tcpocket)
+
+    add_executable(http_get examples/http_get.cpp)
+    target_link_libraries(http_get PRIVATE tcpocket)
+endif()
+
 option(BUILD_TESTS "Build test suite" ON)
 
 if(BUILD_TESTS)
