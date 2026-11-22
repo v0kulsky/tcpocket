@@ -23,6 +23,7 @@ add_library(tcpocket
     src/endpoint.cpp
     src/dns_resolver.cpp
     src/tcp_stream.cpp
+    src/tcp_listener.cpp
 )
 
 target_include_directories(tcpocket
@@ -66,6 +67,7 @@ if(BUILD_TESTS)
 	tests/test_endpoint.cpp
 	tests/test_dns_resolver.cpp
 	tests/test_tcp_stream.cpp
+	tests/test_tcp_listener.cpp
     )
 
     target_link_libraries(unit_tests
