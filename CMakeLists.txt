@@ -68,6 +68,7 @@ if(BUILD_TESTS)
 	tests/test_dns_resolver.cpp
 	tests/test_tcp_stream.cpp
 	tests/test_tcp_listener.cpp
+	tests/test_tcp_integration.cpp
     )
 
     target_link_libraries(unit_tests
